@@ -1,6 +1,6 @@
-import { createErrorHandler } from './config/CreateErrorHandler'
+import { createErrorHandler as ErrorHandler } from './config/CreateErrorHandler'
 import { BadRequestError, NotFoundError } from './domain/errors'
 
-export default createErrorHandler()
+export default ErrorHandler
 
 export { BadRequestError, NotFoundError }
