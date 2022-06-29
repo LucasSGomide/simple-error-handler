@@ -4,7 +4,8 @@
     "description": "Handle application errors with Prodap-Fabs error handler",
     "main": "src/index.ts",
     "scripts": {
-        "test": "jest --noStackTrace --silent --runInBand --passWithNoTests --coverage",
+        "test": "jest --noStackTrace --silent --runInBand --passWithNoTests --coverage --watchAll",
+        "test:ci": "jest --noStackTrace --silent --runInBand --passWithNoTests --coverage",
         "test:watch": "jest --watch",
         "prepare": "husky install",
         "postinstall": "npm run prepare",
