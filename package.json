@@ -19,8 +19,9 @@
         "test": "jest --noStackTrace --silent --runInBand --passWithNoTests --coverage --watchAll",
         "test:ci": "jest --noStackTrace --silent --runInBand --passWithNoTests --coverage",
         "test:watch": "jest --watch",
-        "prepare": "husky install",
-        "postinstall": "npm run prepare",
+        "husky:init": "husky install",
+        "postinstall": "npm run husky:init",
+        "prepare": "npm run build",
         "build": "tsc -p tsconfig.build.json"
     },
     "license": "MIT",
