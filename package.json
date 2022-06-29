@@ -1,10 +1,10 @@
 {
-    "name": "simple-error-handler",
+    "name": "@lucassgomide/simple-error-handler",
     "version": "1.0.0",
     "description": "Library to handle application errors to send a simple ",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/LucasSGomide/simple-error-handler.git"
     },
     "author": "Lucas Gomide",
     "main": "build/index.js",
