@@ -1,20 +1,16 @@
 {
-    "name": "prodap-fabs-error-handler",
+    "name": "simple-error-handler",
     "version": "1.0.0",
     "description": "Library to handle application errors to send a simple ",
     "repository": {
         "type": "git",
-        "url": "https://gitlab.com/prodap-tech/prodap-fabs/fabs-library/prodap-fabs-error-handler.git"
+        "url": ""
     },
     "author": "Lucas Gomide",
     "main": "build/index.js",
     "files": [
         "build"
     ],
-    "bugs": {
-        "url": "https://www.prodap.com.br"
-    },
-    "homepage": "https://www.prodap.com.br",
     "scripts": {
         "test": "jest --noStackTrace --silent --runInBand --passWithNoTests --coverage --watchAll",
         "test:ci": "jest --noStackTrace --silent --runInBand --passWithNoTests --coverage",
