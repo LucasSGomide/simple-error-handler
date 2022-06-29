@@ -1,8 +1,21 @@
 {
     "name": "prodap-fabs-error-handler",
     "version": "1.0.0",
-    "description": "Handle application errors with Prodap-Fabs error handler",
-    "main": "src/index.ts",
+    "description": "Library to handle application errors to send a simple ",
+    "repository": {
+        "type": "git",
+        "url": "https://gitlab.com/prodap-tech/prodap-fabs/fabs-library/prodap-fabs-error-handler.git"
+    },
+    "author": "Lucas Gomide",
+    "main": "build/index.js",
+    "types": "build/index.d.ts",
+    "files": [
+        "build"
+    ],
+    "bugs": {
+        "url": "https://www.prodap.com.br"
+    },
+    "homepage": "https://www.prodap.com.br",
     "scripts": {
         "test": "jest --noStackTrace --silent --runInBand --passWithNoTests --coverage --watchAll",
         "test:ci": "jest --noStackTrace --silent --runInBand --passWithNoTests --coverage",
@@ -11,8 +24,12 @@
         "postinstall": "npm run prepare",
         "build": "tsc -p tsconfig.build.json"
     },
-    "author": "",
-    "license": "ISC",
+    "license": "MIT",
+    "keywords": [
+        "Error Handling",
+        "Prodap",
+        "Fabs"
+    ],
     "devDependencies": {
         "@types/express": "^4.17.13",
         "@types/jest": "^28.1.3",
