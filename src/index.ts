@@ -1,12 +1,6 @@
-import { ErrorsHandler } from './application/errorHandler/ErrorsHandler'
-import {
-    BadRequestErrorHandler,
-    NotFoundErrorHandler,
-} from './application/handlers'
+import { createErrorHandler } from './config/CreateErrorHandler'
+import { BadRequestError, NotFoundError } from './domain/errors'
 
-export default function errorHandler() {
-    return ErrorsHandler.build([
-        new BadRequestErrorHandler(),
-        new NotFoundErrorHandler(),
-    ])
-}
+export default createErrorHandler()
+
+export { BadRequestError, NotFoundError }
