@@ -3,6 +3,4 @@ import { BadRequestError, NotFoundError } from './domain/errors'
 
 const ErrorHandler = createErrorHandler()
 
-export default ErrorHandler
-
-export { BadRequestError, NotFoundError }
+export { ErrorHandler, BadRequestError, NotFoundError }
