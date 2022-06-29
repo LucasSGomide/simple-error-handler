@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "outDir": "build",
-        "rootDir": ".",
+        "rootDir": "./src",
         "baseUrl": ".",
         "module": "commonjs",
         "target": "ES2019",
@@ -9,5 +9,5 @@
         "allowJs": true
     },
     "include": ["src/**/*.ts"],
-    "exclude": ["node_modules", "src/**/*.test.ts"]
+    "exclude": ["node_modules", "src/**/*.test.ts", "src/**/*.mock.ts"]
 }
